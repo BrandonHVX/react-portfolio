@@ -1,6 +1,6 @@
 import React from 'react'
-import {Navbar, Nav, Link, NavDropdown} from 'react-bootstrap'
-
+import {Navbar, Nav,  NavDropdown} from 'react-bootstrap'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 export default function TopNav() {
@@ -14,7 +14,7 @@ export default function TopNav() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
+    <Link to='/projects'>Projects</Link> 
       <Nav.Link href="#pricing">Pricing</Nav.Link>
       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

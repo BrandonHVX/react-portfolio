@@ -1,50 +1,47 @@
-import React from "react"
+import React from "react";
 
-import "./App.css"
+import "./App.css";
 
-import Nav from "./components/Nav"
-import TopNav from "./components/TopNav"
-import AboutMe from "./components/AboutMe"
-import WebDev from "./components/WebDev"
-import ProjectsTabs from './components/ProjectsTabs'
-import Lottie from "react-lottie"
-import Brandonpic from "./images/BrandonPic.jpg"
+import Nav from "./components/Nav";
+import TopNav from "./components/TopNav";
+import AboutMe from "./components/AboutMe";
+import WebDev from "./components/WebDev";
+import ProjectsTabs from "./components/ProjectsTabs";
+import Lottie from "react-lottie";
+import Brandonpic from "./images/BrandonPic.jpg";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Row, Col, Container, Jumbotron, Button } from "react-bootstrap";
 
-
-import { Row, Col, Container, Jumbotron, Button } from "react-bootstrap"
-
-import animationData from "./images/greeting.json"
+import animationData from "./images/greeting.json";
 
 const text = {
   fontSize: "12px",
-  marginTop: "20px",
-}
+  marginTop: "20px"
+};
 
 const col = {
-  marginTop: "20px",
-}
+  marginTop: "20px"
+};
 
 const jumbo = {
-  backgroundColor: "transparent ",
-}
+  backgroundColor: "transparent "
+};
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: "",
-  },
-}
-
+    preserveAspectRatio: ""
+  }
+};
 
 const routes = [
   {
     path: "/",
     exact: true,
-  
-    main: () =><AboutMe/>
+
+    main: () => <AboutMe />
   },
   {
     path: "/projects",
@@ -59,42 +56,28 @@ const routes = [
 ];
 
 const IndexPage = () => (
-
-<Router>
-      {" "} <TopNav />
-      <div className="wrapper">
-     
+  <Router>
+    {" "}
+    <TopNav />
+    <Row>
+      <Col sm={4}>
         <Nav />
-        <Container>
-          
-          {" "}
-       
+      </Col>{" "}
+      <Col sm={8}>
+        {routes.map((route, index) => (
+          // Render more <Route>s with the same paths as
+          // above, but different components this time.
 
-<div style={{ flex: 1, padding: "10px" }}>
-          {routes.map((route, index) => (
-            // Render more <Route>s with the same paths as
-            // above, but different components this time.
-            <Route
-              key={index}
-              path={route.path}
-              exact={route.exact}
-              component={route.main}
-            />
-          ))}
-        </div>
-          
+          <Route
+            key={index}
+            path={route.path}
+            exact={route.exact}
+            component={route.main}
+          />
+        ))}
+      </Col>
+    </Row>
+  </Router>
+);
 
-
-
-
-
-
-
-
-        </Container>
-      </div>
-      </Router>
-
-)
-
-export default IndexPage
+export default IndexPage;

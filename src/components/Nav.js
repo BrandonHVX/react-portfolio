@@ -21,7 +21,7 @@ const sidebarbody = {
 export default class Nav extends Component {
   render() {
     return (
-      <div>
+      <div class="nav flex-sm-column">
         <nav id="sidebar">
           <div class="sidebar-header">
             <img src={Brandonpic} className="round-img" />

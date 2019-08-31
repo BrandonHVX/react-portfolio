@@ -10,6 +10,7 @@ import ProjectsTabs from "./components/ProjectsTabs";
 import Lottie from "react-lottie";
 import Brandonpic from "./images/BrandonPic.jpg";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import { Row, Col, Container, Jumbotron, Button } from "react-bootstrap";
 
 import animationData from "./images/greeting.json";
@@ -57,24 +58,23 @@ const routes = [
 
 const IndexPage = () => (
   <Router>
-    {" "}
-    <TopNav />
     <Row>
       <Col sm={4}>
         <Nav />
-      </Col>{" "}
-      <Col sm={6} md>
-        {routes.map((route, index) => (
-          // Render more <Route>s with the same paths as
-          // above, but different components this time.
-
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.main}
-          />
-        ))}
+      </Col>
+      <Col sm={8}>
+        <div style={{ flex: 1 }}>
+          {routes.map((route, index) => (
+            // Render more <Route>s with the same paths as
+            // above, but different components this time.
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              component={route.main}
+            />
+          ))}
+        </div>
       </Col>
     </Row>
   </Router>

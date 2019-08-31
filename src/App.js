@@ -62,7 +62,7 @@ const IndexPage = () => (
       <Col sm={4}>
         <Nav />
       </Col>
-      <Col sm={12}>
+      <Col sm={8}>
         <div style={{ flex: 1 }}>
           {routes.map((route, index) => (
             // Render more <Route>s with the same paths as

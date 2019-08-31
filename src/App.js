@@ -63,7 +63,7 @@ const IndexPage = () => (
       <Col sm={4}>
         <Nav />
       </Col>{" "}
-      <Col sm={8}>
+      <Col sm={6} md>
         {routes.map((route, index) => (
           // Render more <Route>s with the same paths as
           // above, but different components this time.

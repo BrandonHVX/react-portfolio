@@ -151,7 +151,7 @@ a.article:hover {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 550px) {
+@media (max-width: 569px) {
   #sidebar {
     margin-left: -250px;
     transform: rotateY(90deg);
@@ -181,7 +181,7 @@ a.article:hover {
   }
 }
 
-@media (min-width: 558px) {
+@media (min-width: 569px) {
   .navbar {
     display: none;
   }

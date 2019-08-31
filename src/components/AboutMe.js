@@ -25,7 +25,8 @@ import { Card, Row, Col, Container, Jumbotron, Button } from "react-bootstrap";
 import reactsvg from "../images/react.svg";
 const text = {
   fontSize: "12px",
-  marginTop: "20px"
+  marginTop: "20px",
+  marginRight: "10px"
 };
 
 const col = {

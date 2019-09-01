@@ -46,7 +46,7 @@ const routes = [
   },
   {
     path: "/projects",
-    sidebar: () => <div>bubblegum!</div>,
+
     main: () => <ProjectsTabs />
   },
   {
@@ -59,11 +59,11 @@ const routes = [
 const IndexPage = () => (
   <Router>
     <Row>
-      <Col sm={4}>
+      <Col xs={6} md={4}>
         <Nav />
       </Col>
-      <Col sm={8}>
-        <div style={{ flex: 1 }}>
+      <Col xs={12} md={8}>
+        <div>
           {routes.map((route, index) => (
             // Render more <Route>s with the same paths as
             // above, but different components this time.

@@ -33,9 +33,7 @@ export default function TopNav() {
                           <Nav.Link href="/projects">Projects</Nav.Link>
                         </li>
 
-                        <li>
-                          <Link to="/page-3"> Page3</Link>
-                        </li>
+                        <li>Page3</li>
                         <li>
                           <a href="#">Portfolio</a>
                         </li>

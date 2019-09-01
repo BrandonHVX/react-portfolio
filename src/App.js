@@ -58,7 +58,6 @@ const routes = [
 
 const IndexPage = () => (
   <Router>
-    <TopNav />
     <Row>
       <Col sm={4}>
         <Nav />

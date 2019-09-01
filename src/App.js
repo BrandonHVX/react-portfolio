@@ -45,14 +45,21 @@ const routes = [
     main: () => <AboutMe />
   },
   {
-    path: "/projects",
-
+    path: "/portfolio",
+    exact: true,
     main: () => <ProjectsTabs />
   },
   {
-    path: "/shoelaces",
-    sidebar: () => <div>shoelaces!</div>,
-    main: () => <h2>Shoelaces</h2>
+    path: "/resume",
+    exact: true,
+
+    main: () => <h2>Resume</h2>
+  },
+  {
+    path: "/blog",
+    exact: true,
+
+    main: () => <h2>Blog</h2>
   }
 ];
 

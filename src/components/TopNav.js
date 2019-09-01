@@ -30,12 +30,14 @@ export default function TopNav() {
                           <Nav.Link href="/">About Me</Nav.Link>
                         </li>
                         <li>
-                          <Nav.Link href="/projects">Projects</Nav.Link>
+                          <Nav.Link href="/portfolio">Projects</Nav.Link>
                         </li>
 
-                        <li>Page3</li>
                         <li>
-                          <a href="#">Portfolio</a>
+                          <Nav.Link href="/resume">Resume</Nav.Link>
+                        </li>
+                        <li>
+                          <Nav.Link href="/blog">Blog</Nav.Link>
                         </li>
                         <li>
                           <a href="#">Contact</a>

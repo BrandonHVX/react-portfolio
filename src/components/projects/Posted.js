@@ -15,9 +15,10 @@ import js from "../../images/js.svg";
 import ruby from "../../images/ruby.png";
 import html5 from "../../images/html5.svg";
 import bootstrap from "../../images/bootstrap.svg";
-import apple2x from "../../images/apple_2x.png";
+import apple2x from "../../images/post-it.png";
 import reactsvg from "../../images/react.svg";
 import { Card, Row, Col, Container, Jumbotron, Button } from "react-bootstrap";
+
 const text = {
   fontSize: "12px",
   marginTop: "20px",
@@ -40,14 +41,13 @@ export default function Posted() {
           </p>
         </Jumbotron>
 
-        <img src={apple2x} />
-
-        <p>
+        <div>
+          <img src={apple2x} style={{ width: "100%" }} />
           <h5>User Story</h5>
           This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information. calling
           extra attention to featured content or information.
-        </p>
+        </div>
         <br />
         <h5>Technology Stack</h5>
         <Row style={text}>

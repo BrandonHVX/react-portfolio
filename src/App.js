@@ -85,7 +85,7 @@ const routes = [
 const IndexPage = () => (
   <Router>
     <Row>
-      <Col xs={6} md={4}>
+      <Col xs={2} md={3} style={{ marginRight: "28px" }}>
         <Nav />
       </Col>
       <Col xs={12} md={8}>

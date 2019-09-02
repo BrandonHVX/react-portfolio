@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./nav.css";
 
 const social = {
-  width: 40,
+  width: 30,
   marginRight: "5px"
 };
 
@@ -25,26 +25,35 @@ export default class Nav extends Component {
         <nav id="sidebar">
           <div class="sidebar-header">
             <img src={Brandonpic} className="round-img" />
-          </div>
+          </div>{" "}
+          <h4 style={{ color: "white" }}>Brandon Gines</h4>
+          <p>Full Stack Web Developer</p>
+          <img src={linked} style={social} />
+          <img src={twitter} style={social} />
+          <img src={git} style={social} />
           <div style={sidebarbody}>
             <ul class="list-unstyled components">
-              <p>Dummy Heading</p>
-              <img src={linked} style={social} />
-              <img src={twitter} style={social} />
-              <img src={git} style={social} />
-
               <li>
-                <Link to="/"> About</Link>
+                <Link to="/">
+                  {" "}
+                  <h4>About</h4>
+                </Link>
               </li>
               <li>
-                <Link to="/portfolio">Projects</Link>
+                <Link to="/portfolio">
+                  {" "}
+                  <h4>Projects</h4>
+                </Link>
               </li>
-
               <li>
-                <Link to="/resume">Resume</Link>
+                <Link to="/resume">
+                  <h4>Resume</h4>
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">
+                  <h4>Contact</h4>
+                </Link>
               </li>
             </ul>
           </div>

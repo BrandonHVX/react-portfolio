@@ -7,6 +7,7 @@ import TopNav from "./components/TopNav";
 import AboutMe from "./components/AboutMe";
 import WebDev from "./components/WebDev";
 import ProjectsTabs from "./components/ProjectsTabs";
+import Posted from "./components/projects/Posted";
 import Lottie from "react-lottie";
 import Brandonpic from "./images/BrandonPic.jpg";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -65,7 +66,7 @@ const routes = [
     path: "/posted",
     exact: true,
 
-    main: () => <h2>Posted</h2>
+    main: () => <Posted />
   },
   {
     path: "/synergy",

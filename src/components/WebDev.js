@@ -30,9 +30,9 @@ export default class WebDev extends Component {
                   <div class="col-lg-8">
                     <div class="card-body">
                       <h5 class="card-title">
-                        <a href="project.html" class="theme-link">
+                        <Link to="/posted" class="theme-link">
                           Posted
-                        </a>
+                        </Link>
                       </h5>
                       <p class="card-text">
                         Project intro lorem ipsum dolor sit amet, consectetuer

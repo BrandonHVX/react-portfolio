@@ -20,8 +20,8 @@ export default class Videos extends Component {
       <section class="projects-list px-3 py-8 p-md-8">
         <div>
           <div class="project-cards row isotope">
-            <div class="isotope-item webapp frontend">
-              <div class="card">
+            <div class="isotope-item col-md-6 mb-8 webapp frontend">
+              <div class="card project-card">
                 <div class="row no-gutters ">
                   <img src={bta} class="card-img" alt="image" />
                 </div>
@@ -40,7 +40,7 @@ export default class Videos extends Component {
                 </div>
               </div>
             </div>
-            <div class="isotope-item webapp frontend">
+            <div class="isotope-item col-md-6 mb-8 webapp frontend">
               <div class="card project-card">
                 <div class="row no-gutters ">
                   <img src={salon} class="card-img" alt="image" />

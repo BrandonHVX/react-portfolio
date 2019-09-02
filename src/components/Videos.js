@@ -1,7 +1,17 @@
 import React, { Component } from "react";
 import bta from "../images/bta.svg";
 import salon from "../images/salon.svg";
-
+import {
+  Card,
+  Row,
+  Nav,
+  Tab,
+  Col,
+  Badge,
+  Container,
+  Jumbotron,
+  Button
+} from "react-bootstrap";
 const video = {
   zIndex: 9999
 };
@@ -23,7 +33,29 @@ export default class Videos extends Component {
             <div class="isotope-item col-md-6 mb-8 webapp frontend">
               <div class="card project-card">
                 <div class="row no-gutters ">
+                  <Badge
+                    pill
+                    variant="primary"
+                    style={{
+                      position: "absolute",
+                      margin: "10px",
+                      fontSize: "12px"
+                    }}
+                  >
+                    Video
+                  </Badge>
                   <img src={bta} class="card-img" alt="image" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="project.html" class="theme-link">
+                      Bands By Taylor Alexandria
+                    </a>
+                  </h5>
+
+                  <p class="card-text">
+                    <small class="text-muted">Client: Google</small>
+                  </p>
                 </div>
                 <div class="link-mask">
                   <a class="link-mask-link" href="project.html"></a>
@@ -63,7 +95,7 @@ export default class Videos extends Component {
                     <div class="card-body">
                       <h5 class="card-title">
                         <a href="project.html" class="theme-link">
-                          NYX News
+                          Bands By Taylor Alexandria
                         </a>
                       </h5>
                       <p class="card-text">

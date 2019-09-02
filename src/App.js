@@ -60,6 +60,24 @@ const routes = [
     exact: true,
 
     main: () => <h2>Blog</h2>
+  },
+  {
+    path: "/posted",
+    exact: true,
+
+    main: () => <h2>Posted</h2>
+  },
+  {
+    path: "/synergy",
+    exact: true,
+
+    main: () => <h2>Synergy</h2>
+  },
+  {
+    path: "/nyx",
+    exact: true,
+
+    main: () => <h2>Nyx</h2>
   }
 ];
 

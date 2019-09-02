@@ -1,19 +1,19 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
 
-import nyxlogo from "../images/nyx-logo.png"
-import synlogo from "../images/syn-logo.png"
-import postedlogo from "../images/posted-logo.png"
-import { Link } from "react-router-dom"
+import nyxlogo from "../images/nyx-logo.png";
+import synlogo from "../images/syn-logo.png";
+import postedlogo from "../images/posted-logo.png";
+import { Link } from "react-router-dom";
 const isotope = {
   position: "relative",
-  height: "1000px",
-}
+  height: "1000px"
+};
 
 const moblie = {
   position: "absolute",
   left: "0px",
-  top: "0px",
-}
+  top: "0px"
+};
 
 export default class WebDev extends Component {
   render() {
@@ -48,7 +48,14 @@ export default class WebDev extends Component {
                 <div class="link-mask">
                   <a class="link-mask-link" href="project.html"></a>
                   <div class="link-mask-text">
-                    <Link class="btn btn-secondary" to="/posted">
+                    <Link
+                      class="btn btn-outline-info"
+                      style={{
+                        color: "white",
+                        borderColor: "white"
+                      }}
+                      to="/posted"
+                    >
                       <i class="fas fa-eye mr-2"></i>View Case Study
                     </Link>
                   </div>
@@ -64,9 +71,9 @@ export default class WebDev extends Component {
                   <div class="col-lg-8">
                     <div class="card-body">
                       <h5 class="card-title">
-                        <a href="project.html" class="theme-link">
+                        <Link to="/synergy" class="theme-link">
                           Synergy
-                        </a>
+                        </Link>
                       </h5>
                       <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
@@ -82,7 +89,14 @@ export default class WebDev extends Component {
                 <div class="link-mask">
                   <a class="link-mask-link" href="project.html"></a>
                   <div class="link-mask-text">
-                    <Link class="btn btn-secondary" to="/synergy">
+                    <Link
+                      class="btn btn-outline-info"
+                      style={{
+                        color: "white",
+                        borderColor: "white"
+                      }}
+                      to="/synergy"
+                    >
                       <i class="fas fa-eye mr-2"></i>View Case Study
                     </Link>
                   </div>
@@ -98,9 +112,9 @@ export default class WebDev extends Component {
                   <div class="col-lg-8">
                     <div class="card-body">
                       <h5 class="card-title">
-                        <a href="project.html" class="theme-link">
+                        <Link to="/nyx" class="theme-link">
                           NYX News
-                        </a>
+                        </Link>
                       </h5>
                       <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
@@ -116,7 +130,14 @@ export default class WebDev extends Component {
                 <div class="link-mask">
                   <a class="link-mask-link" href="project.html"></a>
                   <div class="link-mask-text">
-                    <Link class="btn btn-secondary" to="/nyxnews">
+                    <Link
+                      class="btn btn-outline-info"
+                      style={{
+                        color: "white",
+                        borderColor: "white"
+                      }}
+                      to="/nyxnews"
+                    >
                       <i class="fas fa-eye mr-2"></i>View Case Study
                     </Link>
                   </div>
@@ -126,6 +147,6 @@ export default class WebDev extends Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }

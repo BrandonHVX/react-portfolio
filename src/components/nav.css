@@ -477,16 +477,17 @@ hr {
 
 .project-card {
   border-radius: 0;
-  background: #fafafa;
+
   border: 1px solid rgba(0, 0, 0, 0.025);
   position: relative;
-  height: 100%;
+
   z-index: 0;
 }
 .project-card:hover .link-mask {
   visibility: visible;
-  background: rgba(41, 41, 41, 0.653);
+  background: #00387dee;
 }
+
 .project-card:hover .link-mask-text {
   display: block;
 }
@@ -500,7 +501,7 @@ hr {
   font-size: 0.875rem;
 }
 .project-card .card-img-holder {
-  margin-top: 20px;
+  margin-top: 0px;
   overflow: hidden;
   vertical-align: bottom;
 }

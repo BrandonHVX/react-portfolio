@@ -13,6 +13,20 @@
   perspective: 1500px;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #00387d;
+}
+
+.nav-link {
+  color: #00387d;
+  text-decoration: none;
+  border: solid 1px #00387d;
+  background-color: transparent;
+  margin: 0.5rem;
+}
+
 #sidebar {
   min-width: 250px;
   max-width: 250px;
@@ -181,7 +195,7 @@ a.article:hover {
   }
 }
 
-@media (min-width: 573px) {
+@media (min-width: 768px) {
   .navbar {
     display: none;
   }

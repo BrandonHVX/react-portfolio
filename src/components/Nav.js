@@ -37,15 +37,14 @@ export default class Nav extends Component {
                 <Link to="/"> About</Link>
               </li>
               <li>
-                <Link to="/projects">Projects</Link>
+                <Link to="/portfolio">Projects</Link>
               </li>
 
-              <li>Resume</li>
               <li>
-                <a href="#">Blog</a>
+                <Link to="/resume">Resume</Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

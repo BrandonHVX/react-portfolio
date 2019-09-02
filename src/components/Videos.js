@@ -21,7 +21,7 @@ export default class Videos extends Component {
         <div>
           <div class="project-cards row isotope">
             <div class="isotope-item webapp frontend">
-              <div class="card project-card">
+              <div class="card">
                 <div class="row no-gutters ">
                   <img src={bta} class="card-img" alt="image" />
                 </div>

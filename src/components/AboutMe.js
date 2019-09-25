@@ -25,8 +25,7 @@ import { Card, Row, Col, Container, Jumbotron, Button } from "react-bootstrap";
 import reactsvg from "../images/react.svg";
 const text = {
   fontSize: "12px",
-  marginTop: "20px",
-  marginRight: "10px"
+  marginTop: "20px"
 };
 
 const col = {
@@ -48,138 +47,136 @@ const defaultOptions = {
 export default class AboutMe extends Component {
   render() {
     return (
-      <div>
-        <Container>
-          <Col>
-            <Jumbotron style={jumbo}>
-              {" "}
-              <Lottie options={defaultOptions} width={380} />
-              <p>
-                I'm a software engineer specialised in frontend and backend
-                development for complex scalable web apps. I write about
-                software development on my blog. Want to know how I may help
-                your project? Check out my project portfolio and online resume.
-              </p>
-              <p>
-                <Button variant="primary">Learn more</Button>
-              </p>
-            </Jumbotron>
-          </Col>
-          {/* <Col sm={4}>
+      <Container>
+        <Col>
+          <Jumbotron style={jumbo}>
+            {" "}
+            <p>
+              <Lottie options={defaultOptions} width={280} />
+              I'm a software engineer specialised in frontend and backend
+              development for complex scalable web apps. I write about software
+              development on my blog. Want to know how I may help your project?
+              Check out my project portfolio and online resume.
+            </p>
+            <p>
+              <Button variant="primary">Learn more</Button>
+            </p>
+          </Jumbotron>
+        </Col>
+        {/* <Col sm={4}>
           {" "}
           <img src={Brandonpic} width={250} />{" "}
         </Col> */}
 
-          <h1>About Me</h1>
-          <Row style={text}>
-            <Col style={col} xs={6} md={4}>
-              <p>
-                <span>
-                  <img src={js} width={40} />
-                </span>
-                <span>
-                  <img src={reactsvg} width={40} />
-                </span>
-                <span>
-                  <img src={vue} width={40} />
-                </span>
-              </p>
-              Vanilla Javascript, React.JS and Vue.js
-            </Col>
-            <br />
-            <Col style={col} xs={6} md={4}>
-              <p>
-                <span>
-                  <img src={node} width={40} />
-                </span>
-                <span>
-                  <img src={npm} width={40} />
-                </span>
-              </p>
-              Node.js and npm
-            </Col>
-            <br />
-            <Col style={col} xs={6} md={4}>
-              <p>
-                <span>
-                  <img src={ruby} width={38} />
-                </span>
-                <span>
-                  <img src={rails} width={38} />
-                </span>
-              </p>
-              List skills/technologies here. You can change the icon above to
-              any of the 1500+ FontAwesome 5 free icons available. Aenean
-              commodo ligula eget dolor.
-            </Col>
-            <br />
+        <h1>About Me</h1>
+        <Row style={text}>
+          <Col style={col} xs={6} md={4}>
+            <p>
+              <span>
+                <img src={js} width={40} />
+              </span>
+              <span>
+                <img src={reactsvg} width={40} />
+              </span>
+              <span>
+                <img src={vue} width={40} />
+              </span>
+            </p>
+            Vanilla Javascript, React.JS and Vue.js
+          </Col>
+          <br />
+          <Col style={col} xs={6} md={4}>
+            <p>
+              <span>
+                <img src={node} width={40} />
+              </span>
+              <span>
+                <img src={npm} width={40} />
+              </span>
+            </p>
+            Node.js and npm
+          </Col>
+          <br />
+          <Col style={col} xs={6} md={4}>
+            <p>
+              <span>
+                <img src={ruby} width={38} />
+              </span>
+              <span>
+                <img src={rails} width={38} />
+              </span>
+            </p>
+            List skills/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </Col>
+          <br />
 
-            <Col style={col} xs={6} md={4}>
-              <p>
-                <span>
-                  <img src={html5} width={40} />
-                </span>
-                <span>
-                  <img src={reactsvg} width={40} />
-                </span>
-                <span>
-                  <img src={bootstrap} width={40} />
-                </span>
-                <span>
-                  <img src={sass} width={40} />
-                </span>
-              </p>
-              List skills/technologies here. You can change the icon above to
-              any of the 1500+ FontAwesome 5 free icons available. Aenean
-              commodo ligula eget dolor.
-            </Col>
-            <br />
-            <Col style={col} xs={6} md={4}>
-              <p>
-                <span>
-                  <img src={ps} width={40} />
-                </span>
-                <span>
-                  <img src={ai} width={40} />
-                </span>
-                <span>
-                  <img src={xd} width={40} />
-                </span>
-              </p>
-              List skills/technologies here. You can change the icon above to
-              any of the 1500+ FontAwesome 5 free icons available. Aenean
-              commodo ligula eget dolor.
-            </Col>
+          <Col style={col} xs={6} md={4}>
+            <p>
+              <span>
+                <img src={html5} width={40} />
+              </span>
+              <span>
+                <img src={reactsvg} width={40} />
+              </span>
+              <span>
+                <img src={bootstrap} width={40} />
+              </span>
+              <span>
+                <img src={sass} width={40} />
+              </span>
+            </p>
+            List skills/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </Col>
+          <br />
+          <Col style={col} xs={6} md={4}>
+            <p>
+              <span>
+                <img src={ps} width={40} />
+              </span>
+              <span>
+                <img src={ai} width={40} />
+              </span>
+              <span>
+                <img src={xd} width={40} />
+              </span>
+            </p>
+            List skills/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </Col>
 
-            <Col style={col} xs={6} md={4}>
-              <p>
-                <span>
-                  <img src={pr} width={40} />
-                </span>
-                <span>
-                  <img src={ae} width={40} />
-                </span>
-              </p>
-              List skills/technologies here. You can change the icon above to
-              any of the 1500+ FontAwesome 5 free icons available. Aenean
-              commodo ligula eget dolor.
-            </Col>
-            <Col style={col} xs={6} md={4}>
-              <p>
-                <span>
-                  <img src={git} width={40} />
-                </span>
-                <span>
-                  <img src={slack} width={40} />
-                </span>
-              </p>
-              List skills/technologies here. You can change the icon above to
-              any of the 1500+ FontAwesome 5 free icons available. Aenean
-              commodo ligula eget dolor.
-            </Col>
-          </Row>
-        </Container>
-      </div>
+          <Col style={col} xs={6} md={4}>
+            <p>
+              <span>
+                <img src={pr} width={40} />
+              </span>
+              <span>
+                <img src={ae} width={40} />
+              </span>
+            </p>
+            List skills/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </Col>
+          <Col style={col} xs={6} md={4}>
+            <p>
+              <span>
+                <img src={git} width={40} />
+              </span>
+              <span>
+                <img src={slack} width={40} />
+              </span>
+            </p>
+            List skills/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

@@ -9,7 +9,7 @@ export default function TopNav() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <div class="row">
+          <div>
             <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
               <div class="well profile">
                 <div class="col-sm-12">

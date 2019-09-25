@@ -6,6 +6,10 @@
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
+.title-animation {
+  width: 10%;
+}
+
 .wrapper {
   display: flex;
   width: 100%;

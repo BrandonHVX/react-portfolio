@@ -6,8 +6,10 @@ import Nav from "./components/Nav";
 import TopNav from "./components/TopNav";
 import AboutMe from "./components/AboutMe";
 import WebDev from "./components/WebDev";
+import ScrollToTop from "./components/ScrollToTop";
 import ProjectsTabs from "./components/ProjectsTabs";
 import Posted from "./components/projects/Posted";
+import Synergy from "./components/projects/Synergy";
 import Lottie from "react-lottie";
 import Brandonpic from "./images/BrandonPic.jpg";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -72,7 +74,7 @@ const routes = [
     path: "/synergy",
     exact: true,
 
-    main: () => <h2>Synergy</h2>
+    main: () => <Synergy />
   },
   {
     path: "/nyx",
@@ -84,25 +86,29 @@ const routes = [
 
 const IndexPage = () => (
   <Router>
-    <Row>
-      <Col xs={2} md={3} style={{ marginRight: "28px" }}>
-        <Nav />
-      </Col>
-      <Col xs={12} md={8}>
-        <div>
-          {routes.map((route, index) => (
-            // Render more <Route>s with the same paths as
-            // above, but different components this time.
-            <Route
-              key={index}
-              path={route.path}
-              exact={route.exact}
-              component={route.main}
-            />
-          ))}
-        </div>
-      </Col>
-    </Row>
+    {" "}
+    <TopNav />
+    <ScrollToTop>
+      <Row>
+        <Col xs={2} md={3} style={{ marginRight: "60px" }}>
+          <Nav />
+        </Col>
+        <Col xs={12} md={8}>
+          <div>
+            {routes.map((route, index) => (
+              // Render more <Route>s with the same paths as
+              // above, but different components this time.
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={route.main}
+              />
+            ))}
+          </div>
+        </Col>
+      </Row>{" "}
+    </ScrollToTop>
   </Router>
 );
 

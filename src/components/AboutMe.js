@@ -49,12 +49,11 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div>
-        <TopNav />
         <Container>
           <Col>
             <Jumbotron style={jumbo}>
               {" "}
-              <Lottie options={defaultOptions} width={340} />
+              <Lottie options={defaultOptions} width={380} />
               <p>
                 I'm a software engineer specialised in frontend and backend
                 development for complex scalable web apps. I write about

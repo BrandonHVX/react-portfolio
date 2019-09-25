@@ -26,11 +26,15 @@ export default class Nav extends Component {
           <div class="sidebar-header">
             <img src={Brandonpic} className="round-img" />
           </div>{" "}
-          <h4 style={{ color: "white" }}>Brandon Gines</h4>
-          <p>Full Stack Web Developer</p>
-          <img src={linked} style={social} />
-          <img src={twitter} style={social} />
-          <img src={git} style={social} />
+          <h4 style={{ color: "white", textAlign: "center" }}>Brandon Gines</h4>
+          <p style={{ color: "white", textAlign: "center" }}>
+            Full Stack Web Developer
+          </p>
+          <div style={{ color: "white", textAlign: "center" }}>
+            <img src={linked} style={social} />
+            <img src={twitter} style={social} />
+            <img src={git} style={social} />
+          </div>
           <div style={sidebarbody}>
             <ul class="list-unstyled components">
               <li>

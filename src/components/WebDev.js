@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import nyxlogo from "../images/nyx-logo.png";
 import synlogo from "../images/syn-logo.png";
 import postedlogo from "../images/posted-logo.png";
-import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 const isotope = {
   position: "relative",
   height: "1000px"
@@ -48,14 +48,7 @@ export default class WebDev extends Component {
                 <div class="link-mask">
                   <a class="link-mask-link" href="project.html"></a>
                   <div class="link-mask-text">
-                    <Link
-                      class="btn btn-outline-info"
-                      style={{
-                        color: "white",
-                        borderColor: "white"
-                      }}
-                      to="/posted"
-                    >
+                    <Link class="btn btn-info" to="/posted">
                       <i class="fas fa-eye mr-2"></i>View Case Study
                     </Link>
                   </div>
@@ -89,14 +82,7 @@ export default class WebDev extends Component {
                 <div class="link-mask">
                   <a class="link-mask-link" href="project.html"></a>
                   <div class="link-mask-text">
-                    <Link
-                      class="btn btn-outline-info"
-                      style={{
-                        color: "white",
-                        borderColor: "white"
-                      }}
-                      to="/synergy"
-                    >
+                    <Link class="btn btn-info" to="/synergy">
                       <i class="fas fa-eye mr-2"></i>View Case Study
                     </Link>
                   </div>
@@ -130,14 +116,7 @@ export default class WebDev extends Component {
                 <div class="link-mask">
                   <a class="link-mask-link" href="project.html"></a>
                   <div class="link-mask-text">
-                    <Link
-                      class="btn btn-outline-info"
-                      style={{
-                        color: "white",
-                        borderColor: "white"
-                      }}
-                      to="/nyxnews"
-                    >
+                    <Link class="btn btn-info" to="/nyxnews">
                       <i class="fas fa-eye mr-2"></i>View Case Study
                     </Link>
                   </div>
